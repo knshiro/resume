@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+%\fancyfoot{} % clear all footer fields
+%\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+%\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% Hyperlinks
+%\usepackage{hyperref}								% to use hyperlinks
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Ugo}
+\familyname{Bataillard}
+%\title{ResumÃ© title (optional)}               % optional, remove the line if not wanted
+\address{Mi Lugar Nishi Sando 101}{4-14-3 Yoyogi Shibuya-ku}{Tokyo, 151-0053}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{+81 80 1980 7357}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ugo@bataillard.me}                      % optional, remove the line if not wanted
+%\email{\href{mailto:ugo@bataillard.me}{ugo@bataillard.me}}                      % optional, remove the line if not wanted
+%\homepage{{http://www.linkedin.com/in/ugobataillard}{LinkedIn Profile}}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{June 2010}{Master of Science in Computer Science and Networking}{Telecom Paristech}{Paris, France}{}{}
+\cventry{June 2010}{Exchange Semester in Computer Science and Distributed System}{QueensLand University}{Brisbane, Australia}{}{}
+\cventry{June 2005}{High School Diploma}{Lycee Beaussier}{La Seyne sur mer, France}{\textit{16.4/20}}{First class honours and scholarship}
+
+\section{Experience}
+\cventry{Jun 2010 - Present}{Lead Developer}{Orange Labs}{Tokyo}{}{Design Telecommunication operator services in partnership with Japanese ecosystem actors in order to create opportunities between Orange group and the Japanese technology industry.}
+\cventry{Apr 2012 - Present}{CTO and Co-Founder}{Smint Co.,Ltd.}{Tokyo}{}{Co-created a company making a mobile application related to fashion, \textit{fukupix}, that enables its community to share their style and find easily where to find clothing items.}
+\cventry{Jun 2009 - Jan 2010}{Intern Engineer}{Orange Labs}{Tokyo}{}{Software design and development}
+
+\section{Languages}
+\cvlanguage{French}{Native}{}
+\cvlanguage{English}{Fluent}{TOEFL IBT 98/120, 2009}
+\cvlanguage{Japanese}{Conversational}{JLPT N3 2011}
+\cvlanguage{Spansish}{Basic}{}
+
+\section{Computer skills}
+\cvline{Basic}{\small Ruby, C++, UML}
+\cvline{Intermediate}{\small Haskell, C, Python, Bash}
+\cvline{Expert}{\small Scala, Java, ObjectiveC, Android, iOS }
+\cvline{Tools}{\small MongoDB, MySQL, PostgreSQL, Git, Vim, Redmine}
+\cvline{Miscellaneous}{\small Linux, MacOS, Windows, Office}
+
+\section{Qualities}
+\cvline{Personal skills:}{Good software engineering skills, strong analytical, problem-solving and communication skills, eager to learn and develop new skills}
+\cvline{Experience with:}{High level programming languages, SQL and no SQL databases, scripting languages}
+\cvline{International Experience:}{Has been living in Tokyo for more than 3 years \newline{} Lived in Brisbane, Australia for 6 months in 2010}
+
+\end{document}
+
