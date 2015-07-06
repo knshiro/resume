@@ -33,9 +33,9 @@
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{ugo@bataillard.me}                      % optional, remove the line if not wanted
 %\email{\href{mailto:ugo@bataillard.me}{ugo@bataillard.me}}                      % optional, remove the line if not wanted
-%\homepage{{http://www.linkedin.com/in/ugobataillard}{LinkedIn Profile}}                % optional, remove the line if not wanted
+\homepage{{http://ugo.me}{ugo.me}}                % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\photo[64pt][0.4pt]{avatar.jpeg}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
@@ -54,16 +54,43 @@
 \begin{document}
 \maketitle
 
+\section{Experience}
+\cventry{Oct 2014 - Present}{Software engineer/Product owner}{En Japan}{Tokyo}{}{Work on HR services using highly concurrent technologies (Akka, Play). Designed a modular micro service architecture used by all services in the team. Created and managing a project with 10 people.}
+\cventry{Jun 2010 - Sept 2014}{Lead Developer}{Orange Labs}{Tokyo}{}{Created services in partnership with Japanese actors to find opportunities between Orange and the local technology industry. For each project, I designed, defined the market offer, prototyped the solution leading small teams of designers and developers and finally pushed the product to sponsors in the group and to local partners.
+  \begin{itemize}
+    \item Created a prototype and a market offer for a real time control system of QoS for LTE connections. This was an opportunity to interact with a huge infrastructure, LTE SAE, and learn how to dive into complex standards to create innovative solutions.
+    \item End to end designed and prototyped a content delivery solution using 802.11ad in partnership with Wilocity that resulted in the Media Station Kiosk product in collaboration with SITA (https://www.youtube.com/watch?v=9uNkvKtkCNI).
+    \item Collaborated with Les Bains Numeriques festival in France to develop a mobile application to follow other visitors, 6th sens (http://6emesens.orangejapan.jp), and an installation with real time video streaming projected in immersive spheres. This was the occasion to find technical solutions to implement more artistic projects.
+  \end{itemize}
+}
+\cventry{Apr 2012 - Present}{CTO and Co-Founder}{Smint Co.,Ltd.}{Tokyo}{}{Co-created a company making a mobile application related to fashion. Starting a company taught me a lot about human relationships and shaped my vision of product creation and business development.
+  \begin{itemize}
+    \item \textit{fukupix}: fashion mobile SNS that enables its community to share their style and find easily where to buy clothing items (https://www.youtube.com/watch?v=s4oEnScbas4). I lead the architecture design, user experience workflows and implemented the iOS app and api server (with Scala and Lift). I learnt then about ObjectiveC and reactive programming thanks to ReactiveCocoa. I also learnt a lot about functional programming and use of an alternative for dependency injection thanks to cake pattern.
+    \item \textit{onecard}: mobile wallet for loyalty cards. Lead the architecture design and implemented iOS and Android apps and their backend server (with Scala and Play). During this period I learnt a lot about asynchronous and actor based programming.
+  \end{itemize}
+}
+\cventry{Jun 2009 - Jan 2010}{Intern Engineer}{Orange Labs}{Tokyo}{}{Worked on route prediction algorithm using Lucene index and Google Maps API. During this
+period I have acquired experience of main design patterns such as MVC, Dependency Injection using Spring framework.
+  \begin{itemize}
+    \item Extra: Moved scattered hardware based IT structure in the lab to unified virtual machines solution using Google ganeti server management system and created a common working environment thanks to LDAP, git, internal DNS, reverse proxy Nginx and task management based on Redmine.
+  \end{itemize}
+}
+
+\section{Extra}
+\cvline{sbt-packer}{Tool to create Amazon AMI out of scala applications. https://github.com/en-japan/sbt-packer}
+\cvline{SVolley}{Scala wrapper around Google Android Volley. https://github.com/knshiro/svolley}
+\cvline{AFNetworking-RACExtensions}{Rewrote this ReactiveCocoa extension of AFNetworking for AFNetworking 2.0. GitHub Repository. https://github.com/knshiro/AFNetworking-RACExtensions}
+
+\section{Computer skills}
+\cvline{Languages}{\small Scala, Java, ObjectiveC, Android, iOS, Javascript, Haskell, C, C\#, HTML5, CSS3, Python, Bash, Ruby, C++, UML}
+\cvline{Tools}{\small AWS, MySQL, PostgreSQL, Git, Vim}
+\cvline{Miscellaneous}{\small Linux, MacOS, Windows}
+
 \section{Education}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 \cventry{June 2010}{Master of Science in Computer Science and Networking}{Telecom Paristech}{Paris, France}{}{}
 \cventry{June 2010}{Exchange Semester in Computer Science and Distributed System}{QueensLand University}{Brisbane, Australia}{}{}
 \cventry{June 2005}{High School Diploma}{Lycee Beaussier}{La Seyne sur mer, France}{\textit{16.4/20}}{First class honours and scholarship}
-
-\section{Experience}
-\cventry{Jun 2010 - Present}{Lead Developer}{Orange Labs}{Tokyo}{}{Design Telecommunication operator services in partnership with Japanese ecosystem actors in order to create opportunities between Orange group and the Japanese technology industry.}
-\cventry{Apr 2012 - Present}{CTO and Co-Founder}{Smint Co.,Ltd.}{Tokyo}{}{Co-created a company making a mobile application related to fashion, \textit{fukupix}, that enables its community to share their style and find easily where to find clothing items.}
-\cventry{Jun 2009 - Jan 2010}{Intern Engineer}{Orange Labs}{Tokyo}{}{Software design and development}
 
 \section{Languages}
 \cvlanguage{French}{Native}{}
@@ -71,17 +98,8 @@
 \cvlanguage{Japanese}{Conversational}{JLPT N3 2011}
 \cvlanguage{Spansish}{Basic}{}
 
-\section{Computer skills}
-\cvline{Basic}{\small Ruby, C++, UML}
-\cvline{Intermediate}{\small Haskell, C, Python, Bash}
-\cvline{Expert}{\small Scala, Java, ObjectiveC, Android, iOS }
-\cvline{Tools}{\small MongoDB, MySQL, PostgreSQL, Git, Vim, Redmine}
-\cvline{Miscellaneous}{\small Linux, MacOS, Windows, Office}
-
-\section{Qualities}
-\cvline{Personal skills:}{Good software engineering skills, strong analytical, problem-solving and communication skills, eager to learn and develop new skills}
-\cvline{Experience with:}{High level programming languages, SQL and no SQL databases, scripting languages}
-\cvline{International Experience:}{Has been living in Tokyo for more than 3 years \newline{} Lived in Brisbane, Australia for 6 months in 2010}
+\section{Interests and hobbies}
+\cvline{}{I love hiking with my camera around Tokyo. I’m keen on reading programming (specially functional) and science books but I also really like marketing (e.g. Seth Godin’s blog) and psychology (Daniel Kahneman’s Thinking, fast and slow).}
 
 \end{document}
 
